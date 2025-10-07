@@ -4,11 +4,22 @@
     <meta charset="utf-8">
     <title>Kom godt igang med AI-undervisning</title>
     <style>
-      body { margin: 0; overflow: hidden; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.5; color: #ffffff; }
+      body { 
+        margin: 0; 
+        overflow: auto; 
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; 
+        line-height: 1.5; 
+        color: #ffffff; 
+        background-image: url("ChatGPT Image 16. sep. 2025, 11.35.15.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
       h1, h2, h3, h4, h5, h6 { font-weight: 600; }
       header { position: relative; }
-      .hero { height: 100vh; background-image: url("ChatGPT Image 16. sep. 2025, 11.35.15.png"); background-size: cover; background-position: center center; background-repeat: no-repeat; }
-      .overlay { position: absolute; inset: 0; display: block; padding-top: 0; z-index: 2; }
+      .hero { display: none; }
+      .overlay { position: static; display: block; padding-top: 0; z-index: auto; }
       .overlay h1 { 
         color: #ffffff;
         margin: 24px 0 0 0; 
@@ -30,6 +41,11 @@
         transform: translateY(-2px);
         text-shadow: 0 4px 12px rgba(0,0,0,0.9);
         filter: brightness(1.1);
+      }
+      .overlay h2.sub { 
+        font-weight: 500; 
+        font-size: clamp(14px, 2.2vw, 18px); 
+        margin-left: 28px; 
       }
       .row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 24px; align-items: start; padding: 0 24px; margin-top: 32px; }
       @media (max-width: 1200px) { .row { grid-template-columns: 1fr 1fr; gap: 24px; } }
@@ -62,6 +78,7 @@
       <div class="overlay">
         <div>
           <h1>Kom godt i gang med AI-undervisning</h1>
+          <h2>1. AI-workshop</h2>
           <div class="row">
             <div>
               <h2><a href="https://m365.cloud.microsoft/chat/?fromCode=cmcv2&redirectId=6ECC8808F72B46C28596F2BE18A03E47&internalredirect=CCM&auth=2">Copilot</a></h2>
@@ -92,6 +109,15 @@
               </ul>
             </div>
           </div>
+          <h2>2. AI-workshop</h2>
+          <h2 class="sub">Grundprompts til agenter</h2>
+          <ul>
+            <li><a href="https://drive.google.com/drive/folders/1UhX0DEy8ERLpxqo73JSKo9Jt9Ja9tqtE?usp=sharing" target="_blank" rel="noopener">Produktagent</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1iqXPb8-QsVvhxAXL4JV9aOQR-824Wssh?usp=sharing" target="_blank" rel="noopener">Læringsspil</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1aD27vKfhlkvX1i1Wz1oojwzsYuL9aFON?usp=sharing" target="_blank" rel="noopener">Mailagent</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1N7SZSmcz86jiz6C20ro6Yo4tnA19xlWH?usp=sharing" target="_blank" rel="noopener">Eksamensplan</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1Onq_spKV0fOzi1jbti0_q0agSqTMVaTR?usp=sharing" target="_blank" rel="noopener">Undervisningsassistent</a></li>
+          </ul>
         </div>
       </div>
     </header>
